@@ -10,6 +10,7 @@ import { saveCurriculum } from "../services/curriculum.service";
 import CurriculumAcademicForm from "../components/curriculum/CurriculumAcademicForm";
 import CurriculumWorkForm from "../components/curriculum/CurriculumWorkForm";
 import CurriculumAdditionalForm from "../components/curriculum/CurriculumAdditionalForm";
+import CurriculumDualPracticeForm from "../components/curriculum/CurriculumDualPracticeForm";
 
 const defaultValues: CurriculumFormData = {
   academicDatas: [],
@@ -44,6 +45,7 @@ const CurriculumScreen: React.FC = () => {
 
         <CurriculumAcademicForm control={control} errors={errors} />
         <CurriculumWorkForm control={control} errors={errors} />
+        <CurriculumDualPracticeForm control={control} errors={errors} />
         <CurriculumAdditionalForm control={control} errors={errors} />
 
         <TouchableOpacity

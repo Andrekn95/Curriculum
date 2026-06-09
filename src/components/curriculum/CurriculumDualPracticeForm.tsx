@@ -18,7 +18,7 @@ const emptyWork: WorkExperience = {
   activities: "",
 };
 
-const CurriculumWorkForm: React.FC<Props> = ({ control, errors }) => {  const { fields, append, remove } = useFieldArray({ control, name: "workExperiences" });
+const CurriculumDualPracticeForm: React.FC<Props> = ({ control, errors }) => {  const { fields, append, remove } = useFieldArray({ control, name: "workExperiences" });
 
   return (
     <View>
@@ -151,4 +151,4 @@ const CurriculumWorkForm: React.FC<Props> = ({ control, errors }) => {  const { 
   );
 };
 
-export default CurriculumWorkForm;
+export default CurriculumDualPracticeForm;
